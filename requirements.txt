@@ -1,13 +1,14 @@
-# packaging
-pip>=9
-setuptools>=26
-twine
-wheel>=0.29
-
-# data science
-numpy
+# PARHAF Bias Audit — Dependencies
+datasets
 pandas
+numpy
 scikit-learn
+scipy
+matplotlib
+seaborn
+plotly
+nltk
+tqdm
 
 # tests/linter
 black

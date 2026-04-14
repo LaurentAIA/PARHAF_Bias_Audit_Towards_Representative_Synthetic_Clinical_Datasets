@@ -1,8 +1,31 @@
+# Python
 *.egg-info
+**/__pycache__/
+*.pyc
+*.pyo
 .coverage
-.ipynb_checkpoints
+.env
+*.egg
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
 .DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Data & outputs
 raw_data/
 *.csv
-**/__pycache__/
-.env
+
+# Presentation guide (personal notes, not for public repo)
+PRESENTATION_GUIDE.md
+PRESENTATION_GUIDE.md~
+
+# Build artifacts
+dist/
+build/
+*.whl

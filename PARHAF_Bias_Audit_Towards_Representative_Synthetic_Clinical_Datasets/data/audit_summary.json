@@ -1,0 +1,97 @@
+{
+  "metadata": {
+    "dataset": "HealthDataHub/PARHAF",
+    "audit_date": "2026-04-14T18:01:39.611037",
+    "dataset_hash_sha256_16": "eef2b84405dfd606",
+    "n_patients": 4254,
+    "n_specialties": 20,
+    "n_icd_codes": 1140
+  },
+  "bias_scorecard": {
+    "overall_score": 2.6,
+    "dimensions": {
+      "Age distribution": {
+        "score": 3,
+        "metric": "Cohen's w=0.230"
+      },
+      "Sex distribution": {
+        "score": 4,
+        "metric": "Cohen's w=0.012"
+      },
+      "Specialty distribution": {
+        "score": 2,
+        "metric": "Cohen's w=0.803"
+      },
+      "ICD-10 diagnostic coverage": {
+        "score": 3,
+        "metric": "Normalized entropy=0.821"
+      },
+      "Vocabulary diversity (TTR)": {
+        "score": 3,
+        "metric": "Mean TTR=0.746"
+      },
+      "Specialty-vocabulary determinism": {
+        "score": 2,
+        "metric": "Mean vocab overlap=0.057"
+      },
+      "Specialty predictability": {
+        "score": 1,
+        "metric": "Accuracy=98.9%"
+      },
+      "Clinical uncertainty language": {
+        "score": 2,
+        "metric": "22.8% of reports"
+      },
+      "Lateralization balance": {
+        "score": 3,
+        "metric": "χ²=43.5, p=0.000"
+      }
+    }
+  },
+  "fidelity_scorecard": {
+    "overall_score": 3.6,
+    "dimensions": {
+      "Medical abbreviation usage": {
+        "score": 4.0,
+        "observed": "79.0% of reports"
+      },
+      "Temporal markers (dates, J+/-)": {
+        "score": 4.0,
+        "observed": "92.1% of reports"
+      },
+      "Medication references": {
+        "score": 4.0,
+        "observed": "80.7% of reports"
+      },
+      "Clinical negation patterns": {
+        "score": 5.0,
+        "observed": "96.1% of reports"
+      },
+      "Report structural markers": {
+        "score": 4.0,
+        "observed": "100.0% of reports"
+      },
+      "Uncertainty / hedging language": {
+        "score": 3.0,
+        "observed": "22.8% of reports"
+      },
+      "ICD–specialty coherence": {
+        "score": 2.0,
+        "observed": "0.0% coherent (1/3192)"
+      },
+      "Vocabulary diversity (corpus)": {
+        "score": 3.0,
+        "observed": "Normalized H = 0.821"
+      }
+    }
+  },
+  "key_statistics": {
+    "cohens_w_age": 0.2299,
+    "cohens_w_sex": 0.0123,
+    "cohens_w_specialty": 0.8029,
+    "specialty_prediction_accuracy": 0.9894,
+    "mean_leakage_rate_pct": 27.5,
+    "normalized_entropy_icd": 0.8205,
+    "mean_ttr": 0.746
+  }
+}
