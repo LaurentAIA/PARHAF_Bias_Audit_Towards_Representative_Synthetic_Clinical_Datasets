@@ -112,27 +112,3 @@ After running the notebook, the following files are generated:
 ## Disclaimer
 
 This is an independent analysis. It is not affiliated with or endorsed by the Health Data Hub or the PARHAF authors. The goal is to provide a transparent, quantitative reference for downstream users of the dataset.
-
-Create a python3 virtualenv and activate it:
-
-```bash
-sudo apt-get install virtualenv python-pip python-dev
-deactivate; virtualenv -ppython3 ~/venv ; source ~/venv/bin/activate
-```
-
-Clone the project and install it:
-
-```bash
-git clone git@github.com:{group}/PARHAF_Bias_Audit_Towards_Representative_Synthetic_Clinical_Datasets.git
-cd PARHAF_Bias_Audit_Towards_Representative_Synthetic_Clinical_Datasets
-pip install -r requirements.txt
-make clean install test                # install and test
-```
-Functionnal test with a script:
-
-```bash
-cd
-mkdir tmp
-cd tmp
-PARHAF_Bias_Audit_Towards_Representative_Synthetic_Clinical_Datasets-run
-```
