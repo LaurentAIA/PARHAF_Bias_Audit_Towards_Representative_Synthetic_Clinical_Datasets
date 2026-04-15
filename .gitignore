@@ -24,6 +24,8 @@ raw_data/
 # Presentation guide (personal notes, not for public repo)
 PRESENTATION_GUIDE.md
 PRESENTATION_GUIDE.md~
+PRESENTATION_GUIDE.docx
+*.docx
 
 # Build artifacts
 dist/
